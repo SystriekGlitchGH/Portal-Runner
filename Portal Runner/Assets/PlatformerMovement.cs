@@ -1,3 +1,5 @@
+using System;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,26 +12,25 @@ public class PlatformerMovement : MonoBehaviour
 
     private float _movement;
 
-    void Awake()
-    {
+    void Awake(){
         rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
+        Debug.DrawRay(rb2d.position, UnityEngine.Vector2.down * 1.2f, Color.red);
         rb2d.linearVelocityX = _movement;
     }
 
-    public void Move(InputAction.CallbackContext ctx)
-    {
-        _movement = ctx.ReadValue<Vector2>().x * moveSpeed;
+    public void Move(InputAction.CallbackContext ctx){
+        _movement = ctx.ReadValue<UnityEngine.Vector2>().x * moveSpeed;
     }
 
-    public void Jump(InputAction.CallbackContext ctx)
-    {
-        if (ctx.ReadValue<float>() == 1)
-        {
+    private bool GetIsGrounded(){
+        return Physics2D.Raycast(rb2d.position, UnityEngine.Vector2.down, 1.2f, LayerMask.GetMask("Ground"));
+    }
+    public void Jump(InputAction.CallbackContext ctx){
+        if (ctx.ReadValue<float>() == 1 && GetIsGrounded()){ // if proper key is pressed and you are on the ground, then jump
             rb2d.linearVelocityY = jumpHeight;
         }
     }
