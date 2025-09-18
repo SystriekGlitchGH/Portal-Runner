@@ -32,6 +32,14 @@ public class PlatformerMovement : MonoBehaviour
         if (_movement != 0)
         {
             _animator.SetBool("IsRunning", true);
+            if (_movement < 0)
+            {
+                _Srenderer.flipX = true;
+            }
+            if (_movement > 0)
+            {
+                _Srenderer.flipX = false;
+            }
         }
         else
         {
