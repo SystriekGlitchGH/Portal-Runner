@@ -383,6 +383,70 @@ Tilemap:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556405903}
   m_Enabled: 1
+<<<<<<< HEAD
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  m_TileSpriteArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  m_TileMatrixArray:
+  - m_RefCount: 0
+    m_Data:
+      e00: 2.35e-43
+      e01: 0
+      e02: 1e-45
+      e03: 2.439459e-19
+      e10: 0
+      e11: 0
+      e12: 0
+      e13: 5.13e-43
+      e20: -133530.25
+      e21: 2.439459e-19
+      e22: -2.5282116e-29
+      e23: -7.8112196e-19
+      e30: 4.5907e-41
+      e31: 5.13e-43
+      e32: 5.16e-43
+      e33: 5.13e-43
+  m_TileColorArray:
+  - m_RefCount: 0
+    m_Data: {r: -7.811199e-19, g: -7.811199e-19, b: -7.811199e-19, a: -7.811199e-19}
+=======
   m_Tiles:
   - first: {x: -4, y: -7, z: 0}
     second:
@@ -795,6 +859,7 @@ Tilemap:
   m_TileColorArray:
   - m_RefCount: 35
     m_Data: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> 97867a06e27c08a75ac085bedd8af19022e0ed12
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
