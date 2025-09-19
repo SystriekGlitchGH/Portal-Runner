@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 5817633655671073997}
   - component: {fileID: 2942149591100989227}
   - component: {fileID: -1460692100380610331}
+<<<<<<< HEAD
+=======
+  - component: {fileID: -8761915209566580127}
+>>>>>>> 97867a06e27c08a75ac085bedd8af19022e0ed12
   m_Layer: 0
   m_Name: New Palette
   m_TagString: Untagged
@@ -84,6 +88,47 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< HEAD
+=======
+--- !u!19719996 &-8761915209566580127
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92272836621339674}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: b8c92de63a3e8644d8d33295840f6c55, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
+>>>>>>> 97867a06e27c08a75ac085bedd8af19022e0ed12
 --- !u!1 &3943665501953565503
 GameObject:
   m_ObjectHideFlags: 0
