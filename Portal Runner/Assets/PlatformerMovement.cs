@@ -73,14 +73,16 @@ public class PlatformerMovement : MonoBehaviour
     }
     public void PlacePortal1(InputAction.CallbackContext ctx)
     {
-        if(ctx.ReadValue<float>() == 1)
+        float distance = Vector2.Distance(mousePos, player.transform.position);
+        if (ctx.ReadValue<float>() == 1 && distance <= 7)
         {
             portal1.transform.position = mousePos;
         }
     }
     public void PlacePortal2(InputAction.CallbackContext ctx)
     {
-        if (ctx.ReadValue<float>() == 1)
+        float distance = Vector2.Distance(mousePos, player.transform.position);
+        if (ctx.ReadValue<float>() == 1 && distance <= 7)
         {
             portal2.transform.position = mousePos;
         }
