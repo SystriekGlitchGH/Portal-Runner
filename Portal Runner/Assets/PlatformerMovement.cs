@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,6 +7,7 @@ public class PlatformerMovement : MonoBehaviour
     public float moveSpeed;
     public float jumpHeight;
     public float maxSpeed;
+    public static bool hasOrb;
 
     public Portal portal1;
     public Portal portal2;
@@ -36,6 +38,10 @@ public class PlatformerMovement : MonoBehaviour
         if(rb2d.linearVelocityY < -maxSpeed)
         {
             rb2d.linearVelocityY = -maxSpeed;
+        }
+        if (hasOrb == true)
+        {
+            _animator.SetBool("HasPortal", true);
         }
     }
 
@@ -74,7 +80,7 @@ public class PlatformerMovement : MonoBehaviour
     public void PlacePortal1(InputAction.CallbackContext ctx)
     {
         float distance = Vector2.Distance(mousePos, player.transform.position);
-        if (ctx.ReadValue<float>() == 1 && distance <= 5)
+        if (ctx.ReadValue<float>() == 1 && distance <= 5 && hasOrb)
         {
             portal1.transform.position = mousePos;
         }
@@ -82,7 +88,7 @@ public class PlatformerMovement : MonoBehaviour
     public void PlacePortal2(InputAction.CallbackContext ctx)
     {
         float distance = Vector2.Distance(mousePos, player.transform.position);
-        if (ctx.ReadValue<float>() == 1 && distance <= 5)
+        if (ctx.ReadValue<float>() == 1 && distance <= 5 && hasOrb)
         {
             portal2.transform.position = mousePos;
         }
