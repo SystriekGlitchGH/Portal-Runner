@@ -119,6 +119,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &101586009
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1106193139883353212, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: room
+      value: Room3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05037971
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625208125676547102, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690162796360188525, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
+      propertyPath: m_Name
+      value: PortalRoom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1968e7956c20124469473dbe564d36e2, type: 3}
 --- !u!1 &155138658
 GameObject:
   m_ObjectHideFlags: 0
@@ -6823,7 +6884,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5255796163456597, guid: f38af2c41f41687498142e5799feaf0c, type: 3}
+  m_Sprite: {fileID: -1824502868917704014, guid: 01c56d8f5d49c9744af8212949b4f322, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6926,3 +6987,4 @@ SceneRoots:
   - {fileID: 1732631492}
   - {fileID: 1217689672}
   - {fileID: 1191371888}
+  - {fileID: 101586009}
