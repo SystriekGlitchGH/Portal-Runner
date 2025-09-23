@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlatformerMovement : MonoBehaviour
 {
@@ -24,6 +25,16 @@ public class PlatformerMovement : MonoBehaviour
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        if (sceneName == "Room-1" || sceneName == "Room0" || sceneName == "Room1")
+        {
+            hasOrb = false;
+        }
+        else
+        {
+            hasOrb = true;
+        }
     }
 
     // Update is called once per frame
