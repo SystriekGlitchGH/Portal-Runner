@@ -138,3 +138,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
+  delayTime: 1
+  disabledColor: {r: 0, g: 0, b: 0, a: 0}
