@@ -7,16 +7,8 @@ public class Portal : MonoBehaviour
 
     [SerializeField] private Transform destination;
 
-    public float delayTime = 1f;
-    private float currentTimer = 0f;
-
-    public Color disabledColor;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (currentTimer > 0)
-            return;
-
         if (portalObjects.Contains(collision.gameObject))
         {
             return; // makes sure objects aren't constantly teleporting 
@@ -27,25 +19,10 @@ public class Portal : MonoBehaviour
         }
 
         collision.transform.position = destination.position;
-        currentTimer = delayTime;
-
-        GetComponent<SpriteRenderer>().color = disabledColor;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         portalObjects.Remove(collision.gameObject);
-    }
-
-    private void Update()
-    {
-        if(currentTimer > 0)
-        {
-            currentTimer -= Time.deltaTime;
-        }
-        else
-        {
-            GetComponent<SpriteRenderer>().color = Color.white;
-        }
     }
 }
